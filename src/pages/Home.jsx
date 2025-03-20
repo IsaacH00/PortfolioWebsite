@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 
@@ -116,13 +117,13 @@ const Home = () => {
             <p className="text-gray-600 mb-8" style={{ fontFamily: 'Bellota Text' }}>
               Have a project in mind or want to chat about a collaboration? I'd love to hear from you!
             </p>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="inline-block px-8 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-lg shadow-md transition-colors duration-300"
               style={{ fontFamily: 'DM Mono' }}
             >
               Get in Touch
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

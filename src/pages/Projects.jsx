@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 
 // Animation variants
@@ -280,13 +281,13 @@ const Projects = () => {
             <p className="text-gray-600 mb-6" style={{ fontFamily: 'Bellota Text' }}>
               I'm always interested in new challenges and opportunities. Let's discuss how we can work together.
             </p>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="inline-block px-8 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-lg shadow-md transition-colors duration-300"
               style={{ fontFamily: 'DM Mono' }}
             >
               Get in Touch
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
